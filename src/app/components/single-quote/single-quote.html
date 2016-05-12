@@ -1,0 +1,14 @@
+<main class="single-quote">
+  <h1>{{ data.film }}</h1>
+  <h2>{{ data.actor }}</h2>
+  <blockquote cite="{{ data.character }}, {{ data.film }}, {{ data.year }}">
+    {{ data.content }}
+    <footer>
+      <cite>{{ data.character }}, {{ data.film }}, {{ data.year }}</cite>
+    </footer>
+  </blockquote>
+  <button class="btn" ng-click="reroll()">
+    Reroll
+  </button>
+  <a class="btn" href="/#/quotes/{{ data.id }}"> Permalink </a>
+</main>

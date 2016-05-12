@@ -1,0 +1,14 @@
+<li class="single-quote panel panel-default">
+  <div class="panel-heading">
+    <h2 class="panel-title">{{ data.film }} - {{ data.actor }}</h2>
+  </div>
+  <div class="panel-body">
+    <blockquote cite="{{ data.character }}, {{ data.film }}, {{ data.year }}">
+      {{ data.content }}
+      <footer>
+        <cite>{{ data.character }}, {{ data.film }}, {{ data.year }}</cite>
+      </footer>
+    </blockquote>
+    <a href="/#/quotes/{{ data.id }}"> Permalink </a>
+  </div>
+</li>

@@ -9,3 +9,54 @@ body {
   position: relative;
   padding-bottom: 60px;
 }
+
+.jumbotron.no-margin {
+  margin-bottom: 0;
+}
+
+.quote-list {
+  list-style: none;
+  padding: 0;
+}
+
+.page-title {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.navbar {
+  height: 80px;
+  display: flex;
+  align-items: center;
+}
+
+.nav-link {
+  padding: 1.8rem;
+  font-weight: 700;
+  background-color: rgba(255,255,255, 0.1);
+  color: #3C90B4;
+  transition: color 0.1s ease-in-out,
+              background-color 0.1s ease-in-out;
+
+  &:hover,
+  &:focus {
+    color: lighten(#3C90B4, 10%);
+    background-color: rgba(255,255,255, 0.2);
+    text-decoration: none;
+  }
+
+  &:active {
+    transition: none;
+    background-color: rgba(255,255,255, 0.3);
+  }
+
+  &:nth-child(n+2) {
+    margin-left: 2rem;
+  }
+}
+
+.block-glyph {
+  font-size: 2rem;
+  vertical-align: middle;
+  margin-right: 1rem;
+}
