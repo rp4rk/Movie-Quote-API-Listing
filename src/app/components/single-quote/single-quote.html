@@ -1,4 +1,8 @@
-<main class="single-quote">
+<aside ng-hide="data" class="spinner">
+  <span class="glyphicon glyphicon-refresh glyphicon-spin"></span>
+</aside>
+
+<main ng-show="data" class="single-quote">
   <h1>{{ data.film }}</h1>
   <h2>{{ data.actor }}</h2>
   <blockquote cite="{{ data.character }}, {{ data.film }}, {{ data.year }}">

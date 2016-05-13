@@ -1,6 +1,7 @@
 <li class="single-quote panel panel-default">
-  <div class="panel-heading">
-    <h2 class="panel-title">{{ data.film }} - {{ data.actor }}</h2>
+  <div class="panel-heading clearfix">
+    <h2 class="panel-title pull-left">{{ data.film }} - {{ data.actor }}</h2>
+    <span class="quote-details panel-title pull-right">Quote {{ $index + 1 }}/{{ count }}</span>
   </div>
   <div class="panel-body">
     <blockquote cite="{{ data.character }}, {{ data.film }}, {{ data.year }}">

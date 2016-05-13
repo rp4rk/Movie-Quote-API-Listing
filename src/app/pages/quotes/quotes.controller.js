@@ -14,11 +14,13 @@ function QuotesController($log, $stateParams, API, $http, $scope) {
   })
     .then(
       success => {
-        console.log(success.data);
+        $log.debug(success.data);
         $scope.data = success.data;
+        // $scope.data is overridden in each list item scope, so set count
+        $scope.count = success.data.length;
       },
       error => {
-        console.log(error);
+        $log.debug(error);
       }
     )
 }

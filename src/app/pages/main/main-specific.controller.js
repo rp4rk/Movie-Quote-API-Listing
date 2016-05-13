@@ -19,12 +19,12 @@ function MainSpecificController($log, $stateParams, API, $http, $scope, $state, 
   })
     .then(
       success => {
-        console.log(success.data);
+        $log.debug(success.data);
         $scope.data = success.data;
       },
       error => {
-        console.log(error);
-        $state.go('/');
+        $log.debug(error);
+        $state.go('listing');
       }
     );
 }

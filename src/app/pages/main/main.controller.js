@@ -8,18 +8,14 @@ function MainController($log, $stateParams, API, $http, $scope, quoteFactory) {
   $log.debug(API);
 
   // Fetch the data from the random endpoint
-  $http({
-    method: 'GET',
-    url: `${API.url}/quotes/random`
-  })
-    .then(
-      success => {
-        $scope.data = success.data;
-      },
-      error => {
-        console.log(error);
-      }
-    );
+  quoteFactory(
+    success => {
+      $scope.data = success;
+    },
+    error => {
+      console.log(error);
+    }
+  );
 
 }
 

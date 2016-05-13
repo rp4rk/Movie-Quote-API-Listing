@@ -1,6 +1,6 @@
 <div class="container">
   <h1 class="page-title"> Quote List </h1>
   <ul class="quote-list">
-    <quotelistitem ng-repeat="data in data"></quotelistitem>
+    <quotelistitem ng-repeat="data in data | orderBy: '-  '"></quotelistitem>
   </ul>
 </div>
