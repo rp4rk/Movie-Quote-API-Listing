@@ -3,6 +3,7 @@
 ## Instructions
 
 You can visit the github pages site:
+http://ryanpark.co.uk/Movie-Quote-API-Listing/
 
 Alternatively,
 1. Clone the repo
