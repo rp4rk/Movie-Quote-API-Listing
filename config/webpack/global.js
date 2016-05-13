@@ -102,7 +102,7 @@ module.exports = function(_path) {
           "expose?angular"
         ]
       },
-      
+
       {
         test: require.resolve("jquery"),
         loaders: [
@@ -110,7 +110,7 @@ module.exports = function(_path) {
           "expose?jQuery"
         ]
       }
-      
+
       ]
     },
 
